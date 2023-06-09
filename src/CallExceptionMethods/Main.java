@@ -7,8 +7,7 @@ public class Main {
 			System.err.println("Caught Exception");
 			// show error information with e.getMessage()
 			System.out.printf("Error message : %s\n", e.getMessage());
-			System.err.println("getLocalizedMessage():"
-					+ e.getLocalizedMessage());
+			System.err.println("getLocalizedMessage():"+ e.getLocalizedMessage());
 			// show stack trace of the error with e.printStackTrace();
 			e.printStackTrace();
 		}

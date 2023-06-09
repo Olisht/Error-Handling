@@ -41,7 +41,7 @@ public static void main(String args[]) {
 	// Assert that the value entered is greater than 0, otherwise,
 	// it will generate AssertionError exception.
 	try {
-		assert(size >0);
+		assert(size >0 && size<20);
 		printDiamond(size);
 	} catch (AssertionError e) {
 		JOptionPane.showMessageDialog(null, "AssertionError is captured: Size should be > 0.");

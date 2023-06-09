@@ -7,9 +7,11 @@ public class Main {
  public static void main(String[] args) {
 	 try {
 		 System.out.println(3/0);
-	 }catch(Exception e) {
-			System.out.printf("Caught runtime exception = %s\n",e.getMessage());
-		}
+	 }catch(ArithmeticException e){
+		 System.out.printf("Caught arithmetic exception: %s\n", e.getMessage());
+		}catch(Exception e) {
+		 System.out.printf("Caught runtime exception = %s\n",e.getMessage());
+	 }
 }
  
 }
